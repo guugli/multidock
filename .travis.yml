@@ -12,6 +12,6 @@ after_success:
   - docker build -t guugli/workertesto ./worker
   - echo "$DOCKER_PASS" | docker login -u "$DOCKER_ID" --password-stdin
   - docker push guugli/clienttesto
-  - docker push guugli/nginxtessto
+  - docker push guugli/nginxtesto
   - docker push guugli/servertesto
   - docker push guugli/workertesto
